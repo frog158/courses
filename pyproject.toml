@@ -3,6 +3,12 @@ name = "courses"
 version = "0.1.0"
 description = ""
 authors = ["Nikolay Markov <frog158@gmail.com>"]
+packages = [
+    { include = "base_python" },
+]
+
+[tool.poetry.scripts]
+fibonachi = "base_python.scripts.fibonachi:main"
 
 [tool.poetry.dependencies]
 python = "^3.8"
